@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HORIZON</title>
+    <link rel="stylesheet" href="./home/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img
+          src="horizon_logo.jpg"
+          width="22"
+          height="20"
+          class="d-inline-block align-text-top"
+        />
+        <a class="navbar-brand" href="#"> HORIZON</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active me-3" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-3" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-3" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-3" href="#">Departments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-3" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card p-3">
+            <div class="card-body">
+              <h5 class="card-title">AIPPM 2.0</h5>
+              <img align="middle" src="./event_images/AIPPM.jpg" height="230" width="300" />
+              <p class="card-text">
+                The event aimed to provide a platform to engage in reasoned
+                discourse on issues of national importance ; and encourage a
+                greater understanding of Indian politics & policies.
+              </p>
+              <button
+                class="btn btn-primary"
+                onclick="showModal('card1')"
+                style="background-color: #2a3245"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Word Warriors</h5>
+              <img
+                align="middle"
+                src="./event_images/word_warriors.png"
+                width="275"
+                height="200"
+              />
+              <p class="card-text">
+                The event aimed to provide a platform to evaluate a person's
+                personality, including their thoughts, emotions, that reflects
+                as a public speaker by engaging them in group discussions and
+                impromptu speeches.
+              </p>
+              <button
+                class="btn btn-primary"
+                onclick="showModal('card2')"
+                style="background-color: #2a3245"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <div class="card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Week of Journalism</h5>
+              <img
+                align="middle"
+                src="./event_images/week_of_journalism.png"
+                width="300"
+                height="200"
+              />
+              <p class="card-text">
+                This event featured society members presenting diverse
+                perspectives and information through creative Instagram reels,
+                fostering dynamic and engaging communication.
+              </p>
+              <button
+                class="btn btn-primary"
+                onclick="showModal('card3')"
+                style="background-color: #2a3245"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Public Speaking Workshop</h5>
+              <img
+                align="middle"
+                src="./event_images/Public_speaking_workshop.jpg"
+                width="275"
+                height="180"
+              />
+              <p class="card-text">
+                This event aimed at creating a welcoming platform for the
+                HORIZON SUPPORT GROUP to get to know about the rise of
+                importance of public speaking as well as how to overcome the
+                fear of public speaking.
+              </p>
+              <button
+                class="btn btn-primary"
+                onclick="showModal('card4')"
+                style="background-color: #2a3245"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cardModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="cardModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cardModalLabel">Card Information</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id="modalContent"></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="footer">
+      <div class="row pt-3">
+        <div class="col">
+          <i class="bi bi-facebook mx-2"></i>
+          <i class="bi bi-instagram mx-2"></i>
+          <i class="bi bi-linkedin mx-2"></i>
+        </div>
+      </div>
+
+      <div class="row pt-1">
+        <div class="col d-flex justify-content-center">
+          <div>Info</div>
+          <i class="bi bi-dot"></i>
+          <div>Contact</div>
+        </div>
+      </div>
+
+      <div class="row pt-1">
+        <div class="col">
+          <p>
+            Copyright <i class="bi bi-c-circle"></i> 2023. All rights preserved
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
